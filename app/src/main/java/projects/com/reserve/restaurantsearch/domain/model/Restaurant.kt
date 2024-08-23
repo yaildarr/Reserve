@@ -1,4 +1,4 @@
-package projects.com.reserve.domain.model
+package projects.com.reserve.restaurantsearch.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -12,6 +12,7 @@ data class Restaurant(
     val services: MutableList<Service>,
     val menuCategory: MutableList<CategoryDish>,
     val numberPhone: String,
+    val averagePrice: Int,
     val review: Int,
     @PrimaryKey val id: Int? = null
 )

@@ -1,8 +1,8 @@
-package projects.com.reserve.data.data_source
+package projects.com.reserve.restaurantsearch.data.data_source
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import projects.com.reserve.domain.model.Restaurant
+import projects.com.reserve.restaurantsearch.domain.model.Restaurant
 
 
 @Database(
@@ -12,4 +12,8 @@ import projects.com.reserve.domain.model.Restaurant
 abstract class RestaurantDatabase: RoomDatabase() {
 
     abstract val restaurantDao: RestaurantDao
+
+    companion object{
+        const val DATABASE_NAME = "restaurants_db"
+    }
 }

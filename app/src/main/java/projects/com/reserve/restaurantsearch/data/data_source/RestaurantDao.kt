@@ -1,11 +1,11 @@
-package projects.com.reserve.data.data_source
+package projects.com.reserve.restaurantsearch.data.data_source
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
-import projects.com.reserve.domain.model.Restaurant
+import projects.com.reserve.restaurantsearch.domain.model.Restaurant
 
 @Dao
 interface RestaurantDao {

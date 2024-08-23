@@ -1,4 +1,4 @@
-package projects.com.reserve.domain.model
+package projects.com.reserve.restaurantsearch.domain.model
 
 data class CategoryDish (
     val name: String,
